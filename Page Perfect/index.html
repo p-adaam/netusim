@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page perfect.</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="fonts/icofont/icofont.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="navBar">
+		<a href="#title" id="logo">Page perfect.</a>
+		<div class="spacer"></div>
+		<div id="mobileNavigation" class="collapsedNav">
+			<div class="mobileNavigationLink" onclick="expandNav()">
+				<a href="#offers" class="navLink">Nabídka</a>
+			</div>
+			<div class="mobileNavigationLink" onclick="expandNav()">
+				<a href="#aboutUs" class="navLink">O nás</a>
+			</div>
+			<div class="mobileNavigationLink" onclick="expandNav()">
+				<a href="#contact" class="navLink">Kontakt</a>
+			</div>
+		</div>
+		<div class="links">
+			<a href="#offers" class="navLink">Nabídka</a>
+			<a href="#aboutUs" class="navLink">O nás</a>
+			<a href="#contact" class="navLink">Kontakt</a>
+				<i class="icofont-navigation-menu navLink" onclick="expandNav()"></i>
+		</div>
+
+	</div>
+
+	<div id="title" class="titleContainer">
+		<h1>Page perfect.</h1>
+		<h2>Webdesign dle Vaší představy</h2>
+		<div class="titleScroll">
+			<a href="#offers" class="material-icons">expand_more</a>
+		</div>
+	</div>
+
+	<div id="completeWebModal" class="inactiveModal">
+		<div class="modalContent">
+			<h4>Kompletní vývoj webu</h4>
+			<div class="closeModal" onclick="toggleCompleteWeb()">
+				<i class="icofont-ui-close"></i>
+			</div>
+			<span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Quisque porta.</span>
+			<a class="interestedButton" href="#contact" onclick="toggleCompleteWeb()">Mám zájem</a>
+		</div>
+	</div>
+	<div id="ideasWebModal" class="inactiveModal">
+		<div class="modalContent">
+			<h4>Návrh webu</h4>
+			<div class="closeModal" onclick="toggleIdeasWeb()">
+				<i class="icofont-ui-close"></i>
+			</div>
+			<span>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Aenean fermentum risus id tortor. Nunc tincidunt ante vitae massa. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aliquam erat volutpat. Fusce nibh. Donec vitae arcu. Integer in sapien. Etiam bibendum elit eget erat. In sem justo, commodo ut, suscipit at, pharetra vitae, orci.</span>
+			<a class="interestedButton" href="#contact" onclick="toggleIdeasWeb()">Mám zájem</a>
+		</div>
+	</div>
+	<div id="designWebModal" class="inactiveModal">
+		<div class="modalContent">
+				<h4>Design webu</h4>
+				<div class="closeModal" onclick="toggleDesignWeb()">
+					<i class="icofont-ui-close"></i>
+				</div>
+				<span>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Praesent id justo in neque elementum ultrices. Nunc tincidunt ante vitae massa.</span>
+				<a class="interestedButton" href="#contact" onclick="toggleDesignWeb()">Mám zájem</a>
+		</div>
+	</div>
+	<div id="scriptWebModal" class="inactiveModal">
+		<div class="modalContent">
+				<h4>Script pro web</h4>
+				<div class="closeModal" onclick="toggleScriptWeb()">
+					<i class="icofont-ui-close"></i>
+				</div>
+				<span>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora. In convallis. Nulla est. Aliquam ornare wisi eu metus. Phasellus rhoncus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam quis nulla. Nulla est.</span>
+				<a class="interestedButton" href="#contact" onclick="toggleScriptWeb()">Mám zájem</a>
+		</div>
+	</div>
+
+	<div id="offers" class="container">
+		<h3>Nabídka</h3>
+		<div class="wrapper">
+			<div id="completeWeb" class="product" onclick="toggleCompleteWeb()">
+				<div class="productContent">
+					<h4>Kompletní vývoj webu</h4>
+					<span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</span>
+					<div class="spacer"></div>
+					<svg class="bi-three-dots" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+					</svg>
+				</div>
+				<div class="productBackground" id="completeBackground">
+					<i class="icofont-dashboard-web"></i>
+				</div>
+			</div>
+			<div id="ideasWeb" class="product" onclick="toggleIdeasWeb()">
+				<div class="productContent">
+					<h4>Návrh webu</h4>
+					<span>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</span>
+					<div class="spacer"></div>
+					<svg class="bi-three-dots" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+					</svg>
+				</div>
+				<div class="productBackground" id="ideasBackground">
+					<i class="icofont-light-bulb"></i>
+				</div>
+			</div>
+			<div id="designWeb" class="product" onclick="toggleDesignWeb()">
+				<div class="productContent">
+					<h4>Design webu</h4>
+					<span>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</span>
+					<div class="spacer"></div>
+					<svg class="bi-three-dots" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+					</svg>
+				</div>
+				<div class="productBackground" id="designBackground">
+					<i class="icofont-pencil-alt-2"></i>
+				</div>
+			</div>
+			<div id="scriptWeb" class="product" onclick="toggleScriptWeb()">
+				<div class="productContent">
+					<h4>Script pro web</h4>
+					<span>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</span>
+					<div class="spacer"></div>
+					<svg class="bi-three-dots" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  						<path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+					</svg>
+				</div>
+				<div class="productBackground" id="scriptBackground">
+					<i class="icofont-code-alt"></i>
+				</div>
+			</div>
+		</div>
+		<div class="separatorLine"></div>
+	</div>
+
+	<div id="aboutUs" class="container">
+		<h3>O nás</h3>
+		<div class="wrapper">
+			<div class="infoContainer">
+				<i class="icofont-ui-user-group"></i>
+				<h4>Náš tým</h4>
+				<span>In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Sed convallis magna eu sem. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Phasellus et lorem id felis nonummy placerat. Fusce nibh. Maecenas libero. Pellentesque pretium lectus id turpis. Nullam dapibus fermentum ipsum. Phasellus rhoncus. Curabitur sagittis hendrerit ante. Duis ante orci, molestie vitae vehicula venenatis.</span>
+			</div>
+			<div class="infoContainer">
+				<i class="icofont-brainstorming"></i>
+				<h4>Naše zkušenosti</h4>
+				<span>Fusce tellus. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Nullam at arcu a est sollicitudin euismod. Etiam dictum tincidunt diam. Mauris elementum mauris vitae tortor. Praesent id justo in neque elementum ultrices. Et harum quidem rerum facilis est et expedita distinctio.</span>
+			</div>
+		</div>
+		<div class="writeToUs">
+			<h5>Chcete vědět více?</h5>
+			<h5>Napište nám!</h5>
+		</div>
+		
+		<div class="aboutUsScroll">
+			<a href="#contact" class="material-icons">expand_more</a>
+		</div>
+		<div class="separatorLine"></div>	
+	</div>
+
+	<div id="contact" class="container">
+		<h3>Kontakt</h3>
+		<div class="contactWrapper">
+			<div id="dotaz" class="contactInfoWrapper">
+				<h4>Máte dotaz?</h4>
+				<div class="contactInfo">
+					<span>informace@pageperfect.cz</span>
+					<span>+420 123 456 789</span>
+				</div>
+				
+			</div>
+			<div id="spoluprace" class="contactInfoWrapper">
+				<h4>Máte zájem o spolupráci?</h4>
+				<div class="contactInfo">
+					<span>spoluprace@pageperfect.cz</span>
+					<span>+420 789 456 123</span>
+				</div>
+			</div>
+		</div>
+		<div class="separatorLine"></div>
+	</div>
+	<div class="footer">
+		<a href="#title" id="footerLogo">Page perfect.</a>
+	</div>
+</body>
+</html>
